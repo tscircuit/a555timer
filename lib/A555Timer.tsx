@@ -1,13 +1,13 @@
 import type { StandardFootprint } from "tscircuit"
 import type { ReactElement } from "react"
 import { DualInlinePackage } from "@tscircuit/footprints"
+import type { CommonLayout } from "@tscircuit/react-fiber"
 
-interface Props {
+interface Props extends CommonLayout {
   name: string
-  footprint?: StandardFootprint | ReactElement
 }
 
-export const A555Timer = ({ name, footprint }: Props) => (
+export const A555Timer = ({ name, footprint, ...props }: Props) => (
   <bug
     name={name}
     footprint={footprint ?? <DualInlinePackage pad_count={8} />}
@@ -25,5 +25,6 @@ export const A555Timer = ({ name, footprint }: Props) => (
       "7": "DISCH",
       "8": "VCC",
     }}
+    {...props}
   />
 )
