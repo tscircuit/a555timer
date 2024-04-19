@@ -1,6 +1,7 @@
 {
   "name": "@tscircuit/a555timer",
   "module": "index.ts",
+  "main": "index.ts",
   "type": "module",
   "devDependencies": {
     "@tscircuit/react-fiber": "^1.0.19",
@@ -17,5 +18,5 @@
   "dependencies": {
     "@tscircuit/footprints": "^0.0.14"
   },
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
