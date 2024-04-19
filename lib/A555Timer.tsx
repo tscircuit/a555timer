@@ -25,6 +25,6 @@ export const A555Timer = ({ name, footprint, ...props }: Props) => (
       "7": "DISCH",
       "8": "VCC",
     }}
-    {...props}
+    {...(props as any)}
   />
 )
