@@ -14,10 +14,8 @@
   "scripts": {
     "start": "npm run dev",
     "build": "tsup ./index.ts --sourcemap --dts",
+    "test": "bun test",
     "dev": "tsci dev"
-  },
-  "dependencies": {
-    "@tscircuit/footprints": "^0.0.14"
   },
   "version": "0.0.6"
 }
